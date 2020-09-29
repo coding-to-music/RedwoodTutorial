@@ -1,4 +1,5 @@
 import BlogLayout from 'src/layouts/BlogLayout'
+import BlogPostsCell from 'src/components/BlogPostsCell'
 
 const HomePage = () => {
   return (
@@ -8,6 +9,7 @@ const HomePage = () => {
         <p>twitter.com/ThomasConnors</p>
         <p>github.com/coding-to-music</p>
       </main>
+      <BlogPostsCell />
     </BlogLayout>
   )
 }
