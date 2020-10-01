@@ -1,14 +1,16 @@
 import BlogLayout from 'src/layouts/BlogLayout'
+import { Form, Label, TextField, Submit } from '@redwoodjs/forms'
 
 const ContactPage = () => {
   return (
     <BlogLayout>
-      <h1>ContactPage</h1>
-      <p>Find me in ./web/src/pages/ContactPage/ContactPage.js</p>
+      <Form>
+        <Label name="name" />
+        <TextField name="name" />
+        <Submit>Save</Submit>
+      </Form>
     </BlogLayout>
   )
 }
 
 export default ContactPage
-
-// import { Link, routes } from '@redwoodjs/router'
