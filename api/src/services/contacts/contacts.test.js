@@ -1,8 +1,8 @@
 /*
-import { posts } from './posts'
+import { contacts } from './contacts'
 */
 
-describe('posts', () => {
+describe('contacts', () => {
   it('returns true', () => {
     expect(true).toBe(true)
   })

@@ -5,7 +5,7 @@ const BlogLayout = ({ children }) => {
     <>
       <header>
         <h1>
-          <Link to={routes.home()}>tmcdev</Link>
+          <Link to={routes.home()}>ajcwebdev</Link>
         </h1>
         <nav>
           <ul>
@@ -18,7 +18,10 @@ const BlogLayout = ({ children }) => {
           </ul>
         </nav>
       </header>
-      <main>{children}</main>
+
+      <main>
+        <p>{children}</p>
+      </main>
     </>
   )
 }
