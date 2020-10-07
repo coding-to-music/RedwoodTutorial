@@ -21,4 +21,6 @@ yarn install
 yarn redwood dev
 ```
 
-Your browser should open automatically to `http://localhost:8910` to see the web app. Lambda functions run on `http://localhost:8911` and are also proxied to `http://localhost:8910/.redwood/functions/*`. 
+Your browser should open automatically to `http://localhost:8910` to see the web app. Lambda functions run on `http://localhost:8911` and are also proxied to `http://localhost:8910/.redwood/functions/*`.
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/beb53873-3913-4a5f-a877-3e8ef098ba16/deploy-status)](https://app.netlify.com/sites/condescending-engelbart-c9c0c8/deploys)
