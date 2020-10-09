@@ -123,7 +123,7 @@ export const getCurrentUser = async (decoded, { _token, _type }) => {
  */
 export const requireAuth = ({ role } = {}) => {
   if (!context.currentUser) {
-    throw new AuthenticationError("You don't have permission to do that.")
+    throw new AuthenticationError("You don't have permission to do that. test1")
   }
 
   if (
@@ -131,7 +131,7 @@ export const requireAuth = ({ role } = {}) => {
     typeof role === 'string' &&
     !context.currentUser.roles?.includes(role)
   ) {
-    throw new ForbiddenError("You don't have access to do that.")
+    throw new ForbiddenError("You don't have access to do that. test2")
   }
 
   if (
@@ -139,6 +139,6 @@ export const requireAuth = ({ role } = {}) => {
     Array.isArray(role) &&
     !context.currentUser.roles?.some((r) => role.includes(r))
   ) {
-    throw new ForbiddenError("You don't have access to do that.")
+    throw new ForbiddenError("You don't have access to do that. test3")
   }
 }
