@@ -21,12 +21,10 @@ const BlogLayout = ({ children }) => {
             <li>
               <Link to={routes.contact()}>GraphQL Playground</Link>
             </li>
-            <li>
-              <a href="#" onClick={isAuthenticated ? logOut : logIn}>
-                {isAuthenticated && <li>Logged in as {currentUser.email}</li>}
-                {isAuthenticated ? 'Log Out' : 'Log In'}
-              </a>
-            </li>
+            <a href="#" onClick={isAuthenticated ? logOut : logIn}>
+              {isAuthenticated && <li>Logged in as {currentUser.email}</li>}
+              {isAuthenticated ? 'Log Out' : 'Log In'}
+            </a>
           </ul>
         </nav>
       </header>
